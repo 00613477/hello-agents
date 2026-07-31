@@ -60,7 +60,7 @@
 
 运行几何问题求解器，并打印几何问题求解过程与Agent交互历史：
 
-    $ cd src/ravs
+    $ cd src/gps
     $ python agent_loop.py
 
 运行 `agent_loop.py` 之前，请在 `RAVS` 目录下添加 `.env` 文件，并配置以下参数：
