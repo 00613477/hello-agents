@@ -16,10 +16,9 @@
 
 ## 🛠️ 技术栈
 
-- Reflection + ReAct + Plan-and-Solve 融合的智能体框架
+- 使用 [Hello-Agents](https://github.com/datawhalechina/hello-agents) API 实现 Reflection + ReAct + Plan-and-Solve 融合的智能体框架
 - [FormalGeo](https://github.com/FormalGeo/FormalGeo) 形式化系统与求解器
-- [SymPy](https://github.com/sympy/sympy) 符号计算库
-- [OpenAI API](https://github.com/openai/openai-python)
+- 符号计算库 [SymPy](https://github.com/sympy/sympy)
 
 ## 🚀 快速开始
 

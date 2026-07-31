@@ -1,8 +1,8 @@
 from symbolic_solver import SymbolicSolver
 from utils import parse_gdl, parse_cdl, load_json, save_json, get_theorems, make_train_val_test_split
 from multiprocessing import Process, Queue
-from openai import OpenAI
 from dotenv import load_dotenv
+from hello_agents import HelloAgentsLLM
 import time
 import os
 import json
@@ -21,7 +21,7 @@ def dprint(msg):
 
 class Agent:
     def __init__(self, api_key, base_url, model_name):
-        self.client = OpenAI(api_key=api_key, base_url=base_url)
+        self.hello_agents_llm = HelloAgentsLLM(model=model_name, api_key=api_key, base_url=base_url)
         self.model_name = model_name
         self.history = []
         self.memory = []
@@ -35,11 +35,10 @@ class Agent:
         while epoch < max_epoch:
             epoch += 1
             try:
-                response = self.client.chat.completions.create(
-                    model=self.model_name,
+                response = self.hello_agents_llm.invoke(
                     messages=self.memory,
                     response_format={'type': 'json_object'}
-                ).choices[0].message.content
+                ).content
                 if len(response) == 0:
                     max_epoch += 1
                     raise Exception('模型输出内容为空，服务器负载过大，不计入调用次数。')
