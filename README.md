@@ -130,7 +130,7 @@
 - 视频课程陆续放出（将会更加细致，实践课带领大家从设计思路到实施，授人以鱼也授人以渔）
 - HelloAgents框架已经更新V1.0.0版本，将会继续完善，增加更多好用，轻量化的工具和特性，兼容学习版本。
 - 2026年5月更新智能体最新学习路线, [点击](https://github.com/datawhalechina/Agent-Learning-Hub) 查询
-- 感谢大家助力6W Star! 现在提供调查问卷，供大家填写自己需要学习的智能体内容。后续作品《从零开始训练智能体》，帮助每一个学习者掌握从零到一训练自定义场景智能体模型的能力。
+- 感谢大家助力7W Star! 现在提供调查问卷，供大家填写自己需要学习的智能体内容。后续作品《从零开始训练智能体》，帮助每一个学习者掌握从零到一训练自定义场景智能体模型的能力。
 <div align='center'>
     <img src="./读者反馈问卷.png" alt="读者反馈问卷" width="30%">
     <p>扫描二维码填写反馈意见，助力新项目共同成长</p>
@@ -179,7 +179,7 @@
 ## Star History
 
 <div align='center'>
-    <img src="./docs/images/star-history-2026618.png" alt="Datawhale" width="90%">
+    <img src="./docs/images/0803-hello-agents-stats.png" alt="Datawhale" width="90%">
 </div>
 
 <div align="center">
@@ -207,7 +207,7 @@
 ```bibtex
 @misc{hello_agents2025,
   title  = {Hello-Agents: Building an AI Agent from Scratch},
-  author = {Sizhou Chen and Tao Sun and Shufan Jiang and Peilin Huang and Xinmin Zeng and Xinzhong Zhu and all Hello-Agents contributors},
+  author = {Sizhou Chen and Tao Sun and Shufan Jiang and Peilin Huang and Xinmin Zeng and Hao Hu and Xinzhong Zhu and all Hello-Agents contributors},
   year   = {2025},
   url    = {https://github.com/datawhalechina/Hello-Agents},
   note   = {GitHub repository}
