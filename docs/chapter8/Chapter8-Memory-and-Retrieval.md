@@ -340,25 +340,25 @@ agent.tool_registry = tool_registry
 print("=== Adding Multiple Memories ===")
 
 # Add first memory
-result1 = memory_tool.execute("add", content="User Zhang San is a Python developer focusing on machine learning and data analysis", memory_type="semantic", importance=0.8)
+result1 = memory_tool.run("add", content="User Zhang San is a Python developer focusing on machine learning and data analysis", memory_type="semantic", importance=0.8)
 print(f"Memory 1: {result1}")
 
 # Add second memory
-result2 = memory_tool.execute("add", content="Li Si is a frontend engineer skilled in React and Vue.js development", memory_type="semantic", importance=0.7)
+result2 = memory_tool.run("add", content="Li Si is a frontend engineer skilled in React and Vue.js development", memory_type="semantic", importance=0.7)
 print(f"Memory 2: {result2}")
 
 # Add third memory
-result3 = memory_tool.execute("add", content="Wang Wu is a product manager responsible for user experience design and requirements analysis", memory_type="semantic", importance=0.6)
+result3 = memory_tool.run("add", content="Wang Wu is a product manager responsible for user experience design and requirements analysis", memory_type="semantic", importance=0.6)
 print(f"Memory 3: {result3}")
 
 print("\n=== Searching Specific Memories ===")
 # Search for frontend-related memories
 print("🔍 Searching 'frontend engineer':")
-result = memory_tool.execute("search", query="frontend engineer", limit=3)
+result = memory_tool.run("search", query="frontend engineer", limit=3)
 print(result)
 
 print("\n=== Memory Summary ===")
-result = memory_tool.execute("summary")
+result = memory_tool.run("summary")
 print(result)
 ```
 
@@ -445,14 +445,14 @@ For each memory type, we provide different usage examples:
 
 ```python
 # 1. Working Memory - Temporary information, limited capacity
-memory_tool.execute("add",
+memory_tool.run("add",
     content="User just asked a question about Python functions",
     memory_type="working",
     importance=0.6
 )
 
 # 2. Episodic Memory - Specific events and experiences
-memory_tool.execute("add",
+memory_tool.run("add",
     content="On March 15, 2024, user Zhang San completed their first Python project",
     memory_type="episodic",
     importance=0.8,
@@ -461,7 +461,7 @@ memory_tool.execute("add",
 )
 
 # 3. Semantic Memory - Abstract knowledge and concepts
-memory_tool.execute("add",
+memory_tool.run("add",
     content="Python is an interpreted, object-oriented programming language",
     memory_type="semantic",
     importance=0.9,
@@ -469,7 +469,7 @@ memory_tool.execute("add",
 )
 
 # 4. Perceptual Memory - Multimodal information
-memory_tool.execute("add",
+memory_tool.run("add",
     content="User uploaded a Python code screenshot containing function definitions",
     memory_type="perceptual",
     importance=0.7,
