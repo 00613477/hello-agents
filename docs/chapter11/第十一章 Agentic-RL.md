@@ -187,7 +187,7 @@ rl_tool = RLTrainingTool()
 
 # 1. 快速测试:SFT训练(10个样本，1个epoch)
 sft_result_str = rl_tool.run({
-    "action": "train"，
+    "action": "train",
     "algorithm": "sft",
     "model_name": "Qwen/Qwen3-0.6B",
     "output_dir": "./models/quick_test_sft",
