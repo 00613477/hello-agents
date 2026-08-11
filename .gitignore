@@ -165,5 +165,9 @@ cython_debug/
 AGENTS.md
 test_*.py
 !test_tools.py
+!tests/test_convert_py_to_notebooks.py
 .workbuddy/
+.worktrees/
 memory/
+!notebooks/**/memory/
+!notebooks/**/memory/**
